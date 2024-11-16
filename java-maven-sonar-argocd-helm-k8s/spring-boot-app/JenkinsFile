@@ -64,12 +64,5 @@ pipeline {
             }
         }
     }
-     stage('Cleanup Docker Image') {
-      steps {
-        script {
-          sh 'docker system prune -a'
-        }
-      }
-    }
   }
 }
