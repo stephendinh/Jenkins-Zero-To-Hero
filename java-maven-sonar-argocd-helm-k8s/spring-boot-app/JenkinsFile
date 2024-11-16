@@ -6,7 +6,7 @@ pipeline {
     }
   }
   stages {
-      stage('Checkout') {
+    stage('Checkout') {
       steps {
         checkout([$class: 'GitSCM', branches: [[name: '*/main']],
           userRemoteConfigs: [[url: 'https://github.com/stephendinh/Jenkins-Zero-To-Hero.git', credentialsId: 'github']]])
@@ -64,5 +64,5 @@ pipeline {
             }
         }
     }
-  
+  }
 }
