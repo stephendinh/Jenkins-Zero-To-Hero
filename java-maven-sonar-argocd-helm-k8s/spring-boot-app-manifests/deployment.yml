@@ -18,4 +18,4 @@ spec:
         - name: spring-boot-app
           image: stephendinh/ultimate-ci-cd:1
           ports:
-            - containerPort: 8082
+            - containerPort: 8080
